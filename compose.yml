@@ -17,5 +17,7 @@ services:
   app:
     restart: always
     build: .
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
     ports:
       - "8099:3000"
