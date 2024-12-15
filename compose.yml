@@ -14,3 +14,8 @@ services:
       retries: 20
     ports:
       - "127.0.0.1:35432:5432"
+  app:
+    restart: always
+    build: .
+    ports:
+      - "8099:3000"
